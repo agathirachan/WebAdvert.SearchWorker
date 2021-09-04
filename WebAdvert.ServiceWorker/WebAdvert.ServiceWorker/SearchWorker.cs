@@ -16,7 +16,11 @@ namespace WebAdvert.ServiceWorker
     public class SearchWorker
     {
         //SingleTon Instance will be passed to the client
-        public SearchWorker() : this(ElasticSearchHelper.GetInstance(ConfigurationHelper.Instance))
+        //public SearchWorker() : this(ElasticSearchHelper.GetInstance(ConfigurationHelper.Instance))
+        //{
+
+        //}
+        public SearchWorker() : this(ElasticSearchHelper.GetInstance())
         {
 
         }
